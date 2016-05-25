@@ -34,6 +34,8 @@ class Contact {
   
 }
 
-$me = new Contact(1234,"Nguyen","Alex","alex@gmail.com");
-echo $me->__toString();
+$moi = new Contact(1234,"Nguyen","Alex","alex@gmail.com");
+echo $moi;
+$moi->prenom = "Maxime";
+echo $moi;
 ?>
