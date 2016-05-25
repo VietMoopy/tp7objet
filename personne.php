@@ -1,5 +1,5 @@
 <?php
-class personne {
+class Personne {
 	protected $id;
 	protected $nom;
 	protected $prenom;
@@ -27,8 +27,11 @@ class personne {
   }
   
   function __toString(){
-    return "id = ".$this->id."nom = ".$this->nom."prenom = ".$this->prenom
+    return "id = ".$this->id." nom = ".$this->nom." prenom = ".$this->prenom;
   }
   
 }
+
+$personnage = new Personne(1234,"Nguyen","Alex");
+echo $personnage->__toString();
 ?>
