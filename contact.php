@@ -36,6 +36,8 @@ class Contact {
 
 $moi = new Contact(1234,"Nguyen","Alex","alex@gmail.com");
 echo $moi;
-$moi->prenom = "Maxime";
+$moi->setPrenom("Maxime");
+$moi->setNom("Faivre");
+echo "<br>";
 echo $moi;
 ?>
